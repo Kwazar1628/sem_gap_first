@@ -1,0 +1,62 @@
+{
+  "task_1": {
+    "same_hists": {
+      "image_name": "images\\owl.jpg",
+      "object_loc": {
+        "x_min": 150,
+        "x_max": 550,
+        "y_min": 180,
+        "y_max": 480
+      },
+      "background_loc": {
+        "x_min": 150,
+        "x_max": 550,
+        "y_min": 550,
+        "y_max": 850
+      },
+      "image_result": "images\\hist_same_comparison.png"
+    },
+    "diff_hists": {
+      "image_name": "images\\fox.jpg",
+      "object_loc": {
+        "x_min": 250,
+        "x_max": 850,
+        "y_min": 380,
+        "y_max": 780
+      },
+      "background_loc": {
+        "x_min": 350,
+        "x_max": 1250,
+        "y_min": 750,
+        "y_max": 1250
+      },
+      "image_result": "images\\hist_different_comparison.png"
+    }
+  },
+  "task_2": {
+    "image_result": "images\\lena_edges.png",
+    "params": {
+      "gaussian": {
+        "sigma": 1.6
+      },
+      "canny": {
+        "sigma": 2.2,
+        "low_threshold": 0.002,
+        "high_threshold": 0.15
+      }
+    }
+  },
+  "task_3": {
+    "query": "Age > 36 or SibSp > 0",
+    "image_result": "images\\titanic_survival.png"
+  },
+  "task_4": {
+    "result_image": "images\\binarization_result.png",
+    "source_image": "images\\eg.jpg"
+  },
+  "task_5": {
+    "result_image": "images\\local_binarization_result.png",
+    "source_image": "images\\sky.jpg",
+    "block_size": 31
+  }
+}
